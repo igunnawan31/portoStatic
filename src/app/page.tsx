@@ -5,8 +5,9 @@ import CarouselCard from "@/components/dynamic/CarouselCard";
 export default function Home() {
   const images = [
     "/slide1.png",
-    "/slide1.png",
-    "/slide1.png"
+    "/astragraphia.jpeg",
+    "/humas3.jpeg",
+    "/humas2.jpeg",
   ];
 
   return (
@@ -20,18 +21,18 @@ export default function Home() {
               Muhamad Gunawan
             </h2>
             <p className="text-lg text-justify max-w-2xl text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam fugiat accusamus inventore deserunt magni laborum quaerat quas nulla quo iste perferendis sapiente ab quidem tenetur, saepe ut impedit voluptate ad ea! Reiciendis hic odio aspernatur ratione tempore nulla temporibus nostrum eligendi facere! Obcaecati nihil accusantium consectetur quidem, fuga odio maxime.
+              Halo! Saya Muhamad Gunawan, seorang pengembang perangkat lunak yang antusias dan berpengalaman dalam membangun solusi digital modern dan responsif. Dengan latar belakang pendidikan di bidang Informatika, saya memiliki keahlian di berbagai teknologi seperti Next.js, Laravel, Flutter, .NET, serta penguasaan dalam desain UI/UX yang berfokus pada pengalaman pengguna.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-2 pb-10 w-full h-full lg:w-[600px] lg:h-[600px] hover:bg-shadow-3d">
-            {["/slide1.png", "/slide1.png", "/gunawan3.png", "/gunawan4.png"].map((src, i) => (
-              <div key={i} className="relative w-full h-full">
+          <div className="pb-10 w-full max-w-[300px] mx-auto lg:mx-0">
+            {["/fotopribadi.jpg"].map((src, i) => (
+              <div key={i} className="relative aspect-square">
                 <Image
                   src={src}
                   alt={`Gunawan ${i + 1}`}
                   fill
-                  className="object-cover rounded-md border-2 border-white shadow-md"
+                  className="object-cover rounded-full border-2 border-white shadow-md"
                 />
               </div>
             ))}
@@ -79,7 +80,7 @@ export default function Home() {
 
       <div className="mt-20 pb-20 w-full px-10 lg:px-20">
         <section id="skills" className="space-y-6">
-          <h2 className="text-3xl font-bold text-blue-950">🛠️ Keahlian</h2>
+          <h2 className="text-3xl font-bold text-blue-950">🛠️ Hardskill</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 w-full">
             {[
               { name: "HTML", icon: "https://cdn.simpleicons.org/html5/E34F26" },
@@ -116,32 +117,27 @@ export default function Home() {
               {
                 title: "Sistem Manajemen Aset",
                 description: "Web untuk pengelolaan aset Astra Graphia berbasis QR Code (Next.js & .NET).",
-                images: ["/slide1.png", "/slide1.png", "/slide1.png"],
-              },
-              {
-                title: "CafePOS",
-                description: "Aplikasi kasir Laravel & React untuk transaksi, struk, dan manajemen stok.",
-                images: ["/slide1.png", "/slide1.png"],
+                images: ["/sma.png", "/slide1.png", "/slide1.png"],
               },
               {
                 title: "Portfolio @beandigital.id",
-                description: "Website retro-Jepang untuk jasa desain, UI/UX dan web statis/dinamis.",
-                images: ["/slide1.png", "/slide1.png"],
+                description: "Akun Instagram retro-Jepang untuk jasa desain, UI/UX dan web statis/dinamis.",
+                images: ["/beandigital.png", "/slide1.png"],
               },
               {
-                title: "Portfolio @beandigital.id",
+                title: "Website BEM FSM",
                 description: "Website retro-Jepang untuk jasa desain, UI/UX dan web statis/dinamis.",
-                images: ["/slide1.png", "/slide1.png"],
+                images: ["/bemfsm.png", "/slide1.png"],
               },
               {
-                title: "Portfolio @beandigital.id",
+                title: "Website Wihara KKN",
                 description: "Website retro-Jepang untuk jasa desain, UI/UX dan web statis/dinamis.",
-                images: ["/slide1.png", "/slide1.png"],
+                images: ["/wiharasima.png", "/slide1.png"],
               },
               {
-                title: "Portfolio @beandigital.id",
+                title: "Website Desa Regunung KKN",
                 description: "Website retro-Jepang untuk jasa desain, UI/UX dan web statis/dinamis.",
-                images: ["/slide1.png", "/slide1.png"],
+                images: ["/regunung.png", "/slide1.png"],
               },
             ].map((project, i) => (
               <CarouselCard
@@ -161,23 +157,54 @@ export default function Home() {
       </div>
 
       <div className="mt-20 pb-20 w-full px-10 lg:px-20">
-        <section id="others" className="space-y-6 mt-20">
-          <h2 className="text-3xl font-bold text-blue-950">🎓 Lainnya</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section id="Organization" className="space-y-6 mt-20">
+          <h2 className="text-3xl font-bold text-blue-950">📁 Organisasi</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
-              "Kepala Biro Humas BEM FSM UNDIP",
-              "Asisten Lab Jaringan Komputer UNDIP",
-              "Magang di Astragraphia BSD Kota Tangerang",
-            ].map((item, i) => (
-              <div
+              {
+                title: "Kepala Biro Humas BEM FSM UNDIP",
+                description:
+                  "Menjabat sebagai Kepala Biro Humas, saya bertanggung jawab dalam menjalin komunikasi strategis, publikasi, dan membangun citra organisasi melalui media sosial dan event kampus.",
+                images: ["/organization-humas.png"],
+              },
+              {
+                title: "Asisten Laboratorium Jaringan Komputer UNDIP",
+                description:
+                  "Membimbing mahasiswa dalam praktik jaringan komputer menggunakan Cisco Packet Tracer, mengelola materi pembelajaran, serta memberikan asistensi teknis.",
+                images: ["/organization-lab.png"],
+              },
+              {
+                title: "Magang di Astra Graphia BSD – Kota Tangerang",
+                description:
+                  "Berperan sebagai developer dalam pengembangan sistem manajemen dan outbound asset berbasis QR Code menggunakan teknologi .NET dan Next.js.",
+                images: ["/organization-astragraphia.png"],
+              },
+              {
+                title: "Staf Muda Bidang Riset – Research Incubator Center",
+                description:
+                  "Berpartisipasi aktif dalam penelitian dan pengembangan, membantu riset teknologi, serta ikut menginisiasi kegiatan pengembangan keilmuan di lingkungan kampus.",
+                images: ["/organization-ric.png"],
+              },
+              {
+                title: "Staf Muda Bidang Harmonisasi Kampus – BEM UNDIP",
+                description:
+                  "Berperan dalam menjaga hubungan internal kampus, mendukung kegiatan sosial dan koordinasi antar fakultas, serta membantu menciptakan lingkungan kampus yang harmonis.",
+                images: ["/organization-harmonisasi.png"],
+              },
+            ].map((org, i) => (
+              <CarouselCard
                 key={i}
-                className="bg-white rounded-xl shadow-md border p-6 hover:shadow-xl transition"
-              >
-                <p className="text-gray-800 text-base">{item}</p>
-              </div>
+                title={org.title}
+                description={org.description}
+                images={org.images}
+              />
             ))}
           </div>
+          <button className="bg-blue-950 p-4 rounded-xl card-shadow-3d font-bold text-white">
+            <a href="/organization">See My Organization Experience</a>
+          </button>
         </section>
+
       </div>
     </div>
 
