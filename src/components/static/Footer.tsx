@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="text-center md:text-left space-y-1">
                 <h2 className="text-xl font-semibold">Muhamad Gunawan</h2>
                 <p className="text-sm text-white/70">
-                    Let's connect and build something awesome.
+                    Let&apos;s connect and build something awesome.
                 </p>
                 </div>
 

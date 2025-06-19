@@ -63,7 +63,7 @@ export default function Home() {
                 key={i}
                 className="bg-white rounded-xl shadow-lg p-4 flex flex-col items-center justify-center text-blue-900 font-medium border hover:shadow-2xl transition space-y-3"
               >
-                <img src={skill.icon} alt={`${skill.name} logo`} className="w-10 h-10" />
+                <Image src={skill.icon} alt={`${skill.name} logo`} className="w-10 h-10" />
                 <span className="text-sm">{skill.name}</span>
               </div>
             ))}
