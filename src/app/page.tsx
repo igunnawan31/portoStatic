@@ -204,7 +204,6 @@ export default function Home() {
             <a href="/organization">See My Organization Experience</a>
           </button>
         </section>
-
       </div>
     </div>
 
