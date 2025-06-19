@@ -1,4 +1,3 @@
-// components/static/Footer.tsx
 import Link from "next/link";
 import { Github, Linkedin, Instagram, Phone, Mail } from "lucide-react";
 
