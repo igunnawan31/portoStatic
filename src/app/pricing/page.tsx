@@ -1,9 +1,9 @@
-const Pricing = () => {
+const Organization = () => {
     return (
         <div>
-            
+            Organization
         </div>
     )
 }
 
-export default Pricing;
+export default Organization;

@@ -5,12 +5,12 @@ import Image from "next/image";
 interface CarouselCardProps {
   title: string;
   description: string;
-  images: string[]; // tetap array, tapi hanya ambil index ke-0
+  images: string[];
 }
 
 const CarouselCard: React.FC<CarouselCardProps> = ({ title, description, images }) => {
   return (
-    <div className="bg-white rounded-xl shadow-md border p-4 hover:shadow-xl transition">
+    <div className="bg-white rounded-xl border p-4 transition card-shadow-3d">
       <div className="w-full h-48 overflow-hidden rounded-md mb-3 relative">
         {images.length > 0 ? (
           <Image

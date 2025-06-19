@@ -38,6 +38,45 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* <div className="mt-20 w-full px-10 lg:px-20">
+        <section id="services" className="space-y-6">
+          <h2 className="text-3xl font-bold text-blue-950">💼 Layanan Saya</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Branding",
+                icon: "/icons/branding.svg", // replace with your local or CDN icon
+                desc: "Membangun identitas visual dan strategi brand yang kuat.",
+              },
+              {
+                title: "UI/UX",
+                icon: "/icons/uiux.svg", // replace with your local or CDN icon
+                desc: "Desain antarmuka pengguna yang menarik dan mudah digunakan.",
+              },
+              {
+                title: "Product Design",
+                icon: "/icons/product-design.svg", // replace with your local or CDN icon
+                desc: "Perancangan produk digital dari konsep hingga prototipe.",
+              },
+            ].map((service, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-xl shadow-md p-6 text-center border hover:shadow-xl transition space-y-4"
+              >
+                <img
+                  src={service.icon}
+                  alt={service.title}
+                  className="w-12 h-12 mx-auto text-red-500"
+                />
+                <h3 className="text-lg font-bold text-gray-900">{service.title}</h3>
+                <p className="text-sm text-gray-600">{service.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div> */}
+
       <div className="mt-20 pb-20 w-full px-10 lg:px-20">
         <section id="skills" className="space-y-6">
           <h2 className="text-3xl font-bold text-blue-950">🛠️ Keahlian</h2>
@@ -94,6 +133,16 @@ export default function Home() {
                 description: "Website retro-Jepang untuk jasa desain, UI/UX dan web statis/dinamis.",
                 images: ["/slide1.png", "/slide1.png"],
               },
+              {
+                title: "Portfolio @beandigital.id",
+                description: "Website retro-Jepang untuk jasa desain, UI/UX dan web statis/dinamis.",
+                images: ["/slide1.png", "/slide1.png"],
+              },
+              {
+                title: "Portfolio @beandigital.id",
+                description: "Website retro-Jepang untuk jasa desain, UI/UX dan web statis/dinamis.",
+                images: ["/slide1.png", "/slide1.png"],
+              },
             ].map((project, i) => (
               <CarouselCard
                 key={i}
@@ -103,6 +152,11 @@ export default function Home() {
               />
             ))}
           </div>
+          <button className="bg-white p-4 rounded-xl card-shadow-3d font-bold text-blue-950">
+            <a href="/project">
+              See My Project
+            </a>
+          </button>
         </section>
       </div>
 
