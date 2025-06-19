@@ -1,4 +1,4 @@
-  import Image from "next/image";
+import Image from "next/image";
 import Carousel from "@/components/dynamic/CarouselImage";
 import CarouselCard from "@/components/dynamic/CarouselCard";
 
@@ -39,44 +39,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* <div className="mt-20 w-full px-10 lg:px-20">
-        <section id="services" className="space-y-6">
-          <h2 className="text-3xl font-bold text-blue-950">💼 Layanan Saya</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Branding",
-                icon: "/icons/branding.svg", // replace with your local or CDN icon
-                desc: "Membangun identitas visual dan strategi brand yang kuat.",
-              },
-              {
-                title: "UI/UX",
-                icon: "/icons/uiux.svg", // replace with your local or CDN icon
-                desc: "Desain antarmuka pengguna yang menarik dan mudah digunakan.",
-              },
-              {
-                title: "Product Design",
-                icon: "/icons/product-design.svg", // replace with your local or CDN icon
-                desc: "Perancangan produk digital dari konsep hingga prototipe.",
-              },
-            ].map((service, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-xl shadow-md p-6 text-center border hover:shadow-xl transition space-y-4"
-              >
-                <img
-                  src={service.icon}
-                  alt={service.title}
-                  className="w-12 h-12 mx-auto text-red-500"
-                />
-                <h3 className="text-lg font-bold text-gray-900">{service.title}</h3>
-                <p className="text-sm text-gray-600">{service.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-      </div> */}
 
       <div className="mt-20 pb-20 w-full px-10 lg:px-20">
         <section id="skills" className="space-y-6">
@@ -165,31 +127,31 @@ export default function Home() {
                 title: "Kepala Biro Humas BEM FSM UNDIP",
                 description:
                   "Menjabat sebagai Kepala Biro Humas, saya bertanggung jawab dalam menjalin komunikasi strategis, publikasi, dan membangun citra organisasi melalui media sosial dan event kampus.",
-                images: ["/organization-humas.png"],
+                images: ["/humas2.jpeg", "beandigital.png"],
               },
               {
-                title: "Asisten Laboratorium Jaringan Komputer UNDIP",
+                title: "Asisten Laboratorium Informatika UNDIP",
                 description:
-                  "Membimbing mahasiswa dalam praktik jaringan komputer menggunakan Cisco Packet Tracer, mengelola materi pembelajaran, serta memberikan asistensi teknis.",
-                images: ["/organization-lab.png"],
+                  "Membimbing mahasiswa dalam praktik mata kuliah, mengelola materi pembelajaran, serta memberikan asistensi teknis.",
+                images: ["/asprak.jpg"],
               },
               {
                 title: "Magang di Astra Graphia BSD – Kota Tangerang",
                 description:
                   "Berperan sebagai developer dalam pengembangan sistem manajemen dan outbound asset berbasis QR Code menggunakan teknologi .NET dan Next.js.",
-                images: ["/organization-astragraphia.png"],
+                images: ["/astragraphia.jpeg"],
               },
               {
                 title: "Staf Muda Bidang Riset – Research Incubator Center",
                 description:
                   "Berpartisipasi aktif dalam penelitian dan pengembangan, membantu riset teknologi, serta ikut menginisiasi kegiatan pengembangan keilmuan di lingkungan kampus.",
-                images: ["/organization-ric.png"],
+                images: ["/ric.jpg"],
               },
               {
                 title: "Staf Muda Bidang Harmonisasi Kampus – BEM UNDIP",
                 description:
                   "Berperan dalam menjaga hubungan internal kampus, mendukung kegiatan sosial dan koordinasi antar fakultas, serta membantu menciptakan lingkungan kampus yang harmonis.",
-                images: ["/organization-harmonisasi.png"],
+                images: ["/harkam.jpeg"],
               },
             ].map((org, i) => (
               <CarouselCard
@@ -200,9 +162,9 @@ export default function Home() {
               />
             ))}
           </div>
-          <button className="bg-blue-950 p-4 rounded-xl card-shadow-3d font-bold text-white">
+          {/* <button className="bg-blue-950 p-4 rounded-xl card-shadow-3d font-bold text-white">
             <a href="/organization">See My Organization Experience</a>
-          </button>
+          </button> */}
         </section>
       </div>
     </div>
